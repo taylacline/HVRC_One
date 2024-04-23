@@ -7,11 +7,20 @@
   --site-color-6: #0040ff;
   --site-color-7: #131313;
   --site-color-8: #101a26;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
   color: var(--site-color-5);
   background-color: var(--site-color-8);
   background-image: url(/img/tirebackground.PNG);
 }
+@font-face {
+  font-family: "hvrcSite";
+  src: url(/fonts/Haettenschweiler-Regular.ttf);
+  src: url(/fonts/impact.ttf);
+}
+* {
+  font-family: impact, "hvrcSite", sans-serif;
+}
+
 img {
   border-radius: 15px;
 }

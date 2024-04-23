@@ -347,7 +347,7 @@ footer a {
   }
 
   .hero_purpose {
-    font-size: 2rem;
+    font-size: 2.5rem;
     grid-column: span 3;
     grid-row: 1;
   }
@@ -357,7 +357,7 @@ footer a {
   }
 
   .hero_sm {
-    font-size: 1.5em;
+    font-size: 2rem;
     grid-column: span 3;
   }
   .sm_links {
@@ -365,34 +365,37 @@ footer a {
   }
 
   .sm_links a {
-    font-size: 3em;
+    font-size: 4rem;
   }
 
   .location_tags {
     grid-column: span 3;
-    line-height: 1em;
+    line-height: 2rem;
     align-items: start;
   }
 
   .location_tags h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2rem;
+    margin: auto;
   }
 
   .slideshow {
     grid-column: span 3;
     grid-row: span 3;
     grid-row-start: 3;
+    margin: auto;
   }
   .slideshow img {
-    max-height: 250px;
+    max-height: 300px;
   }
 
   .location_links {
     grid-column: span 3;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     margin: auto;
+    grid-row-start: 5;
   }
 
   .location_links a {
@@ -414,14 +417,14 @@ footer a {
 
   .rider_tags h3 {
     grid-column: span 3;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2rem;
   }
 
   .rider button {
     grid-column: span 3;
     height: auto;
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .event {
@@ -440,7 +443,7 @@ footer a {
 
   .event_tags h3 {
     grid-column: span 3;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2rem;
   }
 
@@ -451,7 +454,7 @@ footer a {
   .event button {
     grid-column: span 3;
     height: auto;
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   footer {
@@ -468,11 +471,10 @@ footer a {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   header {
     border-bottom: solid 10px var(--site-color-6);
   }
-
   header img {
     height: auto;
     width: 50%;
@@ -482,7 +484,7 @@ footer a {
   }
 
   .hero_purpose {
-    font-size: 2rem;
+    font-size: 3rem;
     grid-column: span 3;
     grid-row: 1;
   }
@@ -492,7 +494,7 @@ footer a {
   }
 
   .hero_sm {
-    font-size: 1.5em;
+    font-size: 2em;
     grid-column: span 3;
   }
   .sm_links {
@@ -500,34 +502,35 @@ footer a {
   }
 
   .sm_links a {
-    font-size: 3em;
+    font-size: 5rem;
   }
 
   .location_tags {
     grid-column: span 3;
-    line-height: 1em;
+    line-height: 1rem;
     align-items: start;
   }
 
   .location_tags h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .slideshow {
     grid-column: span 3;
     grid-row: span 3;
     grid-row-start: 3;
+    margin: auto;
   }
   .slideshow img {
-    max-height: 250px;
+    max-height: 400px;
   }
 
   .location_links {
     grid-column: span 3;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
-    margin: auto;
+    grid-row-start: 10;
   }
 
   .location_links a {
@@ -549,14 +552,14 @@ footer a {
 
   .rider_tags h3 {
     grid-column: span 3;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .rider button {
     grid-column: span 3;
     height: auto;
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .event {
@@ -575,34 +578,30 @@ footer a {
 
   .event_tags h3 {
     grid-column: span 3;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .event_tags a {
     font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .event button {
     grid-column: span 3;
     height: auto;
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   footer {
     border-top: solid 7px var(--site-color-6);
-    flex-direction: column;
   }
 
   footer a {
     text-align: center;
     font-size: 2rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
     margin: auto;
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 928px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   header {
     border-bottom: solid 10px var(--site-color-6);
   }
@@ -711,3 +710,15 @@ footer a {
     margin: auto;
   }
 }
+/*Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+  * {
+    background-color: blue;
+  }
+}
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+  * {
+    background-color: purple;
+  }
+}*/

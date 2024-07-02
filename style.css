@@ -321,6 +321,48 @@ header {
   margin: auto;
 }
 
+.current {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 2rem;
+  width: min(95%, 80rem);
+  margin-inline: auto;
+}
+
+.current img {
+  grid-column: span 2;
+  grid-row: span 2;
+  justify-self: center;
+}
+
+.current_tags {
+  align-self: center;
+}
+
+.current_tags ul:nth-child(1) {
+  text-align: left;
+  border-left: solid 5px var(--site-color-6);
+  padding: 0.5em;
+  margin: 0.5em;
+  line-height: 1.5em;
+}
+
+.current_tags ul:nth-child(3) {
+  text-align: right;
+  border-right: solid 5px var(--site-color-6);
+  padding: 0.5em;
+  margin: 0.5em;
+  line-height: 1.5em;
+}
+
+.current button {
+  margin: auto;
+}
+
+.current_tags a {
+  font-size: 1em;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -458,6 +500,31 @@ footer a {
     font-size: 1.75rem;
   }
 
+  .current {
+    grid-auto-flow: row;
+  }
+  .current img {
+    grid-column: span 3;
+    max-width: 90%;
+  }
+
+  .current_tags {
+    font-size: 1.75rem;
+    grid-column: span 3;
+  }
+
+  .current_tags h3 {
+    grid-column: span 3;
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .current button {
+    grid-column: span 3;
+    height: auto;
+    font-size: 1.75rem;
+  }
+
   footer {
     border-top: solid 7px var(--site-color-6);
     flex-direction: column;
@@ -589,6 +656,31 @@ footer a {
     font-size: 2rem;
   }
 
+  .current {
+    grid-auto-flow: row;
+  }
+  .current img {
+    grid-column: span 3;
+    max-width: 90%;
+  }
+
+  .current_tags {
+    font-size: 2rem;
+    grid-column: span 3;
+  }
+
+  .current_tags h3 {
+    grid-column: span 3;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .current button {
+    grid-column: span 3;
+    height: auto;
+    font-size: 2rem;
+  }
+
   footer {
     border-top: solid 7px var(--site-color-6);
   }
@@ -695,6 +787,25 @@ footer a {
   }
 
   .event button {
+    grid-column: span 3;
+    height: auto;
+    font-size: 1.75rem;
+  }
+
+  .current {
+    grid-template-columns: auto;
+  }
+
+  .current img {
+    grid-column: span 3;
+    max-width: 90%;
+  }
+
+  .current_tags {
+    grid-column: span 3;
+  }
+
+  .current button {
     grid-column: span 3;
     height: auto;
     font-size: 1.75rem;
